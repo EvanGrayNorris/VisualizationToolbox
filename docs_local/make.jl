@@ -11,7 +11,7 @@ makedocs(
     modules = [VisualizationToolbox],
 )
 
-#copies documentation page to 
+#bandaid solution for hosting documentation on github pages, will be replaced with deploydocs() later
 cp(raw"docs_local\build","docs",force=true)
 
 # Documenter can also automatically deploy documentation to gh-pages.
