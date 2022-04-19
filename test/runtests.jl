@@ -4,8 +4,12 @@ using VisualizationToolbox
 using Test
 using Plots
 
+A = VisualizationToolbox.Ptychography.plot_component(component=2*pi .* rand(100,100,4),type="phase", color_gradient=cgrad([:blue,:cyan,:red,:lightsalmon,:blue]))
+show(A[3])
+png(raw"docs_local\src\assets\images\multiphase_test.png")
+
 @testset "VisualizationToolbox.jl" begin
-    fibril_data = rand(100,100)
-    #check that plot_fibrils is spitting out a plot using gr, plotly, or pyplot backend
-    @test typeof(VisualizationToolbox.plot_fibrils(fibril_data)) == Plots.Plot{Plots.GRBackend} || typeof(VisualizationToolbox.plot_fibrils(fibril_data)) == Plots.Plot{Plots.PlotlyJSBackend()} || typeof(VisualizationToolbox.plot_fibrils(fibril_data)) == Plots.Plot{Plots.PyPlotBackend()}
+
 end
+
+docs_local\src\assets\images
