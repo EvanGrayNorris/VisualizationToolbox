@@ -38,7 +38,7 @@ module VisualizationToolbox
         """
             plot_fibrils(;fibril_dataset)
 
-        return a plot of fibrils defined by the input dataframe
+        return a plot of fibrils defined by the input dataframe, update
         """
         function plot_fibrils(;fibril_dataset)
             return "blank"
