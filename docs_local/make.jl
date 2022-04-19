@@ -11,7 +11,8 @@ makedocs(
     modules = [VisualizationToolbox],
 )
 
-cp("docs_local")
+#copies documentation page to 
+cp(raw"docs_local\build","docs",force=true)
 
 # Documenter can also automatically deploy documentation to gh-pages.
 # See "Hosting Documentation" and deploydocs() in the Documenter manual
